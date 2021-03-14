@@ -22,12 +22,12 @@ In this assignment i was able to answer the following questions
 
 > Which model had the best balanced accuracy score?
 
-* The RandomOverSampler model predicts the highest balanced accuracy score. This model gives us the highest probability of correct calls or correct predictions for credit risk.
+* The RandomOverSampler model has the highest balanced accuracy score since it predicts the highest probability of correct calls for credit risk.
 > Which model had the best recall score?
 
-* The RandomOverSampler model has the best Recall score. This model will give us the highest actual positive samples that are correct.
+* The RandomOverSampler model  give us the highest actual positive samples that are correct and therefore also has the best Recall score. 
 > Which model had the best geometric mean score?
-* The RandomOverSampler model has the best geometric mean score.
+* Again ,the RandomOverSampler model has the best geometric mean score.
 
 ### 2. Ensemble Learning
 
