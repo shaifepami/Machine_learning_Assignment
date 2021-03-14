@@ -44,18 +44,9 @@ In this assignment i was able to answer the following questions
 *The EasyEnsembleClassifier model predicts the highest geometric mean score.
 
 > What are the top three features?
+
 *The top three features are
 
 (a) total_rec_prncp
-
 (b) total_pymnt
-
 (c) total_pymnt_inv.
-
----
-
-### Hints and Considerations
-
-For the ensemble learners, use 100 estimators for both models.
-
----
