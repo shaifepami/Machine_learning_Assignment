@@ -37,6 +37,11 @@ Use the above referenced Resampling Stater Notebook to answer the following:
 > Which model had the best geometric mean score?
 * The RandomOverSampler model has the best geometric mean score.
 
+
+Of the 4 models, the Logistic Regression model using the SMOTEENN Combination Re-Sampler had the best balanced accuracy score at 79.8%.
+Of the 4 models, the Logistic Regression model using the Smote Oversampler had the best recall score at 88%.
+Of the 4 models, both the Logistic Regression model using the SMOTEENN Combination Re-Sampler and the model using the Smote Oversampler had the best geometric mean scores at 79%.
+
 ### 2. Ensemble Learning
 
 Use the above referenced Ensemble Starter Notebook to answer the following:
@@ -51,6 +56,11 @@ Use the above referenced Ensemble Starter Notebook to answer the following:
 * total_rec_prncp','total_pymnt','total_pymnt_inv are the top 3 features in the model predictions.
 
 ---
+
+Of the 2 models, the Easy Ensemble classifier had the best balanced accuracy score at 93%.
+Of the 2 models, the Easy Ensemble classifier had the best recall score at 94%.
+Of the 2 models, the Easy Ensemble classifier had the best geometric mean score at 93%.
+The top three features are total_rec_prncp (8.3%), total_pymnt_inv (6.9%) and last_pymnt_amnt (6.1%).
 
 ### Hints and Considerations
 

@@ -1,0 +1,48 @@
+202103050000029
+202103080000024
+202103050000041
+202103050000031
+202103050000042
+202103050000033
+
+
+select corp_key,corporate_name,sum(decode(part_tran_type,'D',c.tran_amt,-c.tran_amt)) Wire_Fee
+ from tbaadm.htd,tbaadm.gam,crmuser.corporate,(select tran_id,tran_Date ,tran_Amt
+                                from tbaadm.htd,tbaadm.gam
+                              where gam.acid = htd.acid
+                            and entry_user_id  in ('FIVUSR')
+                            and foracid like 'PAL%'
+                            and tran_date between '01-feb-2021' and '28-feb-2021')  C
+where gam.acid = htd.acid
+and c.tran_id = htd.tran_id
+and corporate.corp_key = gam.cif_id
+and htd.tran_date between '01-feb-2021' and '28-feb-2021'
+and c.tran_date = htd.tran_Date
+and acct_ownership !='O'
+and tran_sub_type !='IC'
+and htd.tran_amt =c.tran_amt
+and foracid ='50013000001274' group by corp_key, corporate_name
+
+
+select corp_key,corporate_name,sum(decode(part_tran_type,'D',c.tran_amt,-c.tran_amt)) Other_Fee
+ from tbaadm.htd,tbaadm.gam,crmuser.corporate,(select tran_id,tran_Date ,tran_Amt
+                                from tbaadm.htd,tbaadm.gam
+                              where gam.acid = htd.acid
+                            and entry_user_id  not in ('FIVUSR')
+                            and foracid like 'PAL%'
+                            and tran_date between '01-feb-2021' and '28-feb-2021')  C
+where gam.acid = htd.acid
+and c.tran_id = htd.tran_id
+and corporate.corp_key = gam.cif_id
+and htd.tran_date between '01-feb-2021' and '28-feb-2021'
+and c.tran_date = htd.tran_Date
+and acct_ownership !='O'
+and tran_sub_type !='IC'
+and htd.tran_amt =c.tran_amt
+and gam.cif_id ='C000000109'
+and htd.del_flg ='N' group by corp_key, corporate_name
+
+INterenst 
+
+
+MTD_WIRE_FEE,MTD_INT_COLL,MTD_OTHER_FEE,TOTAL_MTD_CHARGES,
