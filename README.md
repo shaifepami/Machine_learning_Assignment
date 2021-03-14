@@ -2,7 +2,7 @@
 
 # Unit 11—Risky Business
 
-![Credit Risk](Images/credit-risk.jpg)
+![Credit Risk](Image/credit-risk.jpg)
 
 ## Background
 
