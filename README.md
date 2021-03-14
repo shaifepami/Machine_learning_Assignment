@@ -21,8 +21,10 @@ In this assignment i was able to answer the following questions
 ### 1. Resampling
 
 > Which model had the best balanced accuracy score?
+
 * The RandomOverSampler model predicts the highest balanced accuracy score. This model gives us the highest probability of correct calls or correct predictions for credit risk.
 > Which model had the best recall score?
+
 * The RandomOverSampler model has the best Recall score. This model will give us the highest actual positive samples that are correct.
 > Which model had the best geometric mean score?
 * The RandomOverSampler model has the best geometric mean score.
@@ -30,12 +32,15 @@ In this assignment i was able to answer the following questions
 ### 2. Ensemble Learning
 
 > Which model had the best balanced accuracy score?
+
 * The model with the best balanced accuracy sore is the EasyEnsembleClassifier model which predicts the highest balanced accuracy score.  It has a f1 value of 0.14 for high_risk and 0.97 for low_risk. It gives us the correct predictions for credit risk.
 
 > Which model had the best recall score?
+
 * The EasyEnsembleClassifier model  has the best recall score. It has a rec value of 0.91 for high_risk and 0.94 for low_risk and provie the highest actual positive samples that are correct.
 
 > Which model had the best geometric mean score?
+
 *The EasyEnsembleClassifier model predicts the highest geometric mean score.
 
 > What are the top three features?
