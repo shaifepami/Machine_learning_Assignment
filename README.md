@@ -48,5 +48,7 @@ In this assignment i was able to answer the following questions
 *The top three features are
 
 (a) total_rec_prncp
+
 (b) total_pymnt
+
 (c) total_pymnt_inv.
