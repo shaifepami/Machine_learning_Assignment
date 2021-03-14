@@ -13,8 +13,8 @@ Credit risk is an inherently imbalanced classification problem (the number of go
 Resampling
 Ensemble Learning
 
-1. [Resampling](#Resampling)
-2. [Ensemble Learning](#Ensemble-Learning)
+1. Resampling
+2. Ensemble Learning
 
 In this assignment i was able to answer the following questions
 
